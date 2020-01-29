@@ -52,7 +52,7 @@ def plot_dependencies(dictionary_values,
         # could rewrite this as a lambda function
         # but I understand this better
         def map_x(x):
-            if x > 0:
+            if x.all():
                 return pos_influence
             else:
                 return negative_influence
